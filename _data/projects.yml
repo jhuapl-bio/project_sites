@@ -1,0 +1,48 @@
+- name: Environmental Genomics
+  description: Tools and workflows for environmental DNA and RNA analysis, including metagenomics and metabarcoding, ecological data integration, and field-forward sequencing applications.
+  icon: "⌁"
+  projects:
+    - name: eDNA Automated Metadata
+      description: Extensions for importing metadata from shipboard systems, generate dynamic sample labels to link physical samples to the metadata sheet, and display collected samples on the map for quick visuals.
+      url: https://github.com/jhuapl-bio/eDNA_automated_metadata
+      tags: [eDNA, metagenomics]
+    - name: eDNA processing
+      description: Tools for turning marine eDNA taxonomic results into interactive, map-based HTML reports and a queryable Postgres database. 
+      url: https://github.com/jhuapl-bio/eDNA_processing
+      tags: [eDNA, metagenomics]
+    - name: Mytax2
+      description: Real-time dashboard for metagenomic taxonomic analysis.
+      url: https://github.com/jhuapl-bio/mytax
+      tags: [eDNA, metagenomics, dashboard, Illumina, ONT]
+- name: Infectious Disease Surveillance
+  description: Genomic and metagenomic software for pathogen detection, characterization, and biosurveillance.
+  icon: "+"
+  projects:
+    - name: TaxTriage
+      description: Software supporting Oxford Nanopore sequencing analysis workflows.
+      url: https://github.com/jhuapl-bio/taxtriage
+      tags: [Nextflow, Agnostics Detection, Reporting, Illumina, ONT]
+    - name: Basestack
+      description: Platform for rapid and real-time analysis of next-generation sequencing data.
+      url: https://github.com/jhuapl-bio/Basestack
+      tags: [NGS, surveillance]
+    - name: ONT-DART
+      description: Software supporting Oxford Nanopore sequencing analysis workflows.
+      url: https://github.com/jhuapl-bio/ONT-DART
+      tags: [Nanopore, sequencing]
+# - name: Metabolomics
+#   description: Software for mass spectrometry, metabolite detection, spectral analysis, and related computational workflows.
+#   icon: "◇"
+#   projects:
+#     - name: Example Metabolomics Project
+#       description: Replace this entry with a metabolomics repository.
+#       url: https://github.com/jhuapl-bio
+#       tags: [LC-MS, GC-MS]
+# - name: Our Organization
+#   description: A list of all repositories within the jhuapl-bio organization on GitHub.
+#   icon: "<>"
+#   projects:
+#     - name: Browse all repositories
+#       description: Explore the complete jhuapl-bio organization on GitHub.
+#       url: https://github.com/jhuapl-bio
+#       tags: [GitHub, open source]

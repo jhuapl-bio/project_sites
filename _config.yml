@@ -1,0 +1,17 @@
+title: JHU/APL Biological Sciences
+# Project site: served at https://jhuapl-bio.github.io/project_sites/
+# The Pages workflow overrides baseurl automatically from the repo's Pages
+# settings, so this also works if a custom domain is added later.
+url: https://jhuapl-bio.github.io
+baseurl: "/project_sites"
+markdown: kramdown
+exclude:
+  - README.md
+  - Makefile
+  - build-demo.sh
+  - watch.sh
+  - demo.html
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .github

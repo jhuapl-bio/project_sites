@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Open-source biological sciences software from the Johns Hopkins University Applied Physics Laboratory.">
+  <title>JHU/APL Biological Sciences</title>
+  <style>
+:root {
+  --heritage-blue: #002d72;
+  --deep-blue: #001f4e;
+  --spirit-blue: #68ace5;
+  --gold: #f1c400;
+  --ink: #17202a;
+  --muted: #596674;
+  --line: #d9e0e7;
+  --soft: #f4f7fa;
+  --white: #fff;
+  --max: 1180px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.55;
+}
+a { color: inherit; }
+.wrap { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
+
+.site-header { border-bottom: 1px solid rgba(255,255,255,.18); background: var(--heritage-blue); color: white; }
+.nav { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { display: flex; align-items: center; gap: 18px; color: white; text-decoration: none; font-weight: 700; letter-spacing: .02em; }
+.brand img { display: block; width: 220px; max-height: 50px; object-fit: contain; object-position: left center; }
+.brand span { padding-left: 18px; border-left: 1px solid rgba(255,255,255,.45); }
+.github-link { color: white; text-decoration: none; font-size: .9rem; font-weight: 700; }
+.github-link:hover { text-decoration: underline; }
+
+.hero {
+  color: white;
+  background: linear-gradient(120deg, var(--heritage-blue) 0%, var(--deep-blue) 72%);
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  right: -180px;
+  top: -220px;
+  border: 1px solid rgba(104,172,229,.35);
+  transform: rotate(45deg);
+}
+.hero-inner { padding: 92px 0 104px; position: relative; z-index: 1; }
+.eyebrow, .section-kicker { margin: 0 0 14px; font-size: .76rem; letter-spacing: .18em; font-weight: 800; }
+.eyebrow { color: var(--spirit-blue); }
+h1 { max-width: 800px; margin: 0; font-size: clamp(2.8rem, 7vw, 5.5rem); line-height: .98; letter-spacing: -.045em; }
+.lede { max-width: 690px; margin: 28px 0 32px; font-size: 1.18rem; color: #e3edf7; }
+.button { display: inline-block; padding: 12px 18px; border: 1px solid var(--spirit-blue); color: white; text-decoration: none; font-weight: 700; }
+.button:hover { background: var(--spirit-blue); color: var(--deep-blue); }
+
+.intro { display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; padding-top: 76px; padding-bottom: 56px; border-bottom: 1px solid var(--line); }
+.section-kicker { color: var(--heritage-blue); }
+.intro h2 { margin: 0; font-size: 2rem; line-height: 1.15; }
+.intro > p { margin: 0; color: var(--muted); font-size: 1.05rem; }
+
+.categories { padding-top: 10px; padding-bottom: 90px; }
+.category { display: grid; grid-template-columns: 320px 1fr; gap: 54px; padding: 58px 0; border-bottom: 1px solid var(--line); }
+.category-heading { display: flex; gap: 18px; align-items: flex-start; }
+.category-icon { flex: 0 0 44px; width: 44px; height: 44px; display: grid; place-items: center; background: var(--heritage-blue); color: white; font-size: 1.15rem; font-weight: 800; }
+.category h2 { margin: 0 0 10px; color: var(--heritage-blue); font-size: 1.45rem; line-height: 1.2; }
+.category-heading p { margin: 0; color: var(--muted); font-size: .92rem; }
+.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.project-card { min-height: 190px; padding: 24px; border: 1px solid var(--line); text-decoration: none; background: white; transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease; }
+.project-card:hover { transform: translateY(-3px); border-color: var(--spirit-blue); box-shadow: 0 10px 28px rgba(0,45,114,.09); }
+.card-top { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; }
+.project-card h3 { margin: 0; color: var(--heritage-blue); font-size: 1.1rem; }
+.project-card p { color: var(--muted); font-size: .92rem; }
+.tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 22px; }
+.tags span { padding: 4px 8px; background: var(--soft); color: var(--heritage-blue); font-size: .72rem; font-weight: 700; }
+
+footer { background: var(--deep-blue); color: white; border-top: 5px solid var(--gold); }
+.footer-inner { min-height: 170px; display: flex; justify-content: space-between; align-items: center; gap: 30px; }
+.footer-inner p { margin: 4px 0 0; color: #c8d4e1; }
+.footer-links { display: flex; gap: 24px; }
+.footer-links a { color: white; text-decoration: none; }
+.footer-links a:hover { text-decoration: underline; }
+
+@media (max-width: 820px) {
+  .brand img { width: 170px; }
+  .brand span { display: none; }
+  .hero-inner { padding: 70px 0 80px; }
+  .intro, .category { grid-template-columns: 1fr; gap: 30px; }
+  .project-grid { grid-template-columns: 1fr; }
+}
+
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="/" aria-label="JHU APL Biological Sciences home">
+        <img src="/assets/img/apl-logo.svg" alt="Johns Hopkins APL - Open Source Software" onerror="this.style.display='none'">
+        <span>Capabilities for the Biological Sciences Community</span>
+      </a>
+      <!-- <a class="github-link" href="https://github.com/jhuapl-bio">Johns Hopkins APL</a> -->
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Johns Hopkins APL - Open Source Software</p>
+        <h1>Capabilities for the Biological Sciences Community</h1>
+        <p class="lede">Open-source tools, workflows, and research software supporting biological detection, characterization, and analysis.</p>
+        <a class="button" href="#projects">Explore projects ↓</a>
+      </div>
+    </section>
+
+    <section class="intro wrap">
+      <div>
+        <p class="section-kicker">Our Work</p>
+        <h2>Addressing Cross-Domain Biological Challenges</h2>
+      </div>
+      <p>We develop tools that span a range of disciplines, enabling everything from exploratory R&D to real-time biomonitoring applications. Public repositories shared in jhuapl-bio are consolidated below by application area, with brief descriptions of how we use them for our work - and how you might use them for yours.</p>
+    </section>
+
+    <section id="projects" class="categories wrap">
+      
+      <article class="category">
+        <div class="category-heading">
+          <span class="category-icon" aria-hidden="true">⌁</span>
+          <div>
+            <h2>Environmental Genomics</h2>
+            <p>Tools and workflows for environmental DNA and RNA analysis, including metagenomics and metabarcoding, ecological data integration, and field-forward sequencing applications.</p>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          
+          <a class="project-card" href="https://github.com/jhuapl-bio/eDNA_automated_metadata">
+            <div class="card-top">
+              <h3>eDNA Automated Metadata</h3>
+              <span aria-hidden="true">↗</span>
+            </div>
+            <p>Extensions for importing metadata from shipboard systems, generate dynamic sample labels to link physical samples to the metadata sheet, and display collected samples on the map for quick visuals.</p>
+            <div class="tags">
+              <span>eDNA</span><span>metagenomics</span>
+            </div>
+          </a>
+          
+          <a class="project-card" href="https://github.com/jhuapl-bio/eDNA_processing">
+            <div class="card-top">
+              <h3>eDNA processing</h3>
+              <span aria-hidden="true">↗</span>
+            </div>
+            <p>Tools for turning marine eDNA taxonomic results into interactive, map-based HTML reports and a queryable Postgres database.</p>
+            <div class="tags">
+              <span>eDNA</span><span>metagenomics</span>
+            </div>
+          </a>
+          
+          <a class="project-card" href="https://github.com/jhuapl-bio/mytax">
+            <div class="card-top">
+              <h3>Mytax2</h3>
+              <span aria-hidden="true">↗</span>
+            </div>
+            <p>Real-time dashboard for metagenomic taxonomic analysis.</p>
+            <div class="tags">
+              <span>eDNA</span><span>metagenomics</span><span>dashboard</span><span>Illumina</span><span>ONT</span>
+            </div>
+          </a>
+          
+        </div>
+      </article>
+      
+      <article class="category">
+        <div class="category-heading">
+          <span class="category-icon" aria-hidden="true">+</span>
+          <div>
+            <h2>Infectious Disease Surveillance</h2>
+            <p>Genomic and metagenomic software for pathogen detection, characterization, and biosurveillance.</p>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          
+          <a class="project-card" href="https://github.com/jhuapl-bio/taxtriage">
+            <div class="card-top">
+              <h3>TaxTriage</h3>
+              <span aria-hidden="true">↗</span>
+            </div>
+            <p>Software supporting Oxford Nanopore sequencing analysis workflows.</p>
+            <div class="tags">
+              <span>Nextflow</span><span>Agnostics Detection</span><span>Reporting</span><span>Illumina</span><span>ONT</span>
+            </div>
+          </a>
+          
+          <a class="project-card" href="https://github.com/jhuapl-bio/Basestack">
+            <div class="card-top">
+              <h3>Basestack</h3>
+              <span aria-hidden="true">↗</span>
+            </div>
+            <p>Platform for rapid and real-time analysis of next-generation sequencing data.</p>
+            <div class="tags">
+              <span>NGS</span><span>surveillance</span>
+            </div>
+          </a>
+          
+          <a class="project-card" href="https://github.com/jhuapl-bio/ONT-DART">
+            <div class="card-top">
+              <h3>ONT-DART</h3>
+              <span aria-hidden="true">↗</span>
+            </div>
+            <p>Software supporting Oxford Nanopore sequencing analysis workflows.</p>
+            <div class="tags">
+              <span>Nanopore</span><span>sequencing</span>
+            </div>
+          </a>
+          
+        </div>
+      </article>
+      
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div>
+        <strong>JHU/APL Biological Sciences</strong>
+        <p>Public research software and resources.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/jhuapl-bio">GitHub</a>
+        <a href="https://www.jhuapl.edu/">JHU/APL</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Open-source biological sciences software from the Johns Hopkins University Applied Physics Laboratory.">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="JHU APL Biological Sciences home">
+        <img src="{{ '/assets/img/apl-logo.svg' | relative_url }}" alt="Johns Hopkins APL - Open Source Software" onerror="this.style.display='none'">
+        <span>Capabilities for the Biological Sciences Community</span>
+      </a>
+      <!-- <a class="github-link" href="https://github.com/jhuapl-bio">Johns Hopkins APL</a> -->
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Johns Hopkins APL - Open Source Software</p>
+        <h1>Capabilities for the Biological Sciences Community</h1>
+        <p class="lede">Open-source tools, workflows, and research software supporting biological detection, characterization, and analysis.</p>
+        <a class="button" href="#projects">Explore projects ↓</a>
+      </div>
+    </section>
+
+    <section class="intro wrap">
+      <div>
+        <p class="section-kicker">Our Work</p>
+        <h2>Addressing Cross-Domain Biological Challenges</h2>
+      </div>
+      <p>We develop tools that span a range of disciplines, enabling everything from exploratory R&D to real-time biomonitoring applications. Public repositories shared in jhuapl-bio are consolidated below by application area, with brief descriptions of how we use them for our work - and how you might use them for yours.</p>
+    </section>
+
+    <section id="projects" class="categories wrap">
+      {% for category in site.data.projects %}
+      <article class="category">
+        <div class="category-heading">
+          <span class="category-icon" aria-hidden="true">{{ category.icon }}</span>
+          <div>
+            <h2>{{ category.name }}</h2>
+            <p>{{ category.description }}</p>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          {% for project in category.projects %}
+          <a class="project-card" href="{{ project.url }}">
+            <div class="card-top">
+              <h3>{{ project.name }}</h3>
+              <span aria-hidden="true">↗</span>
+            </div>
+            <p>{{ project.description }}</p>
+            <div class="tags">
+              {% for tag in project.tags %}<span>{{ tag }}</span>{% endfor %}
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </article>
+      {% endfor %}
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div>
+        <strong>JHU/APL Biological Sciences</strong>
+        <p>Public research software and resources.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/jhuapl-bio">GitHub</a>
+        <a href="https://www.jhuapl.edu/">JHU/APL</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
