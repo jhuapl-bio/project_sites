@@ -2,16 +2,16 @@
   description: Tools and workflows for environmental DNA and RNA analysis, including metagenomics and metabarcoding, ecological data integration, and field-forward sequencing applications.
   icon: "⌁"
   projects:
-    - name: eDNA Automated Metadata
-      description: Extensions for importing metadata from shipboard systems, generate dynamic sample labels to link physical samples to the metadata sheet, and display collected samples on the map for quick visuals.
+    - name: eDNA Metadata Collection
+      description: FAIRe-compliant metadata collection, physical sample barcoding, and shipboard system integration. Mapping of sampling campaigns for cruise reports.
       url: https://github.com/jhuapl-bio/eDNA_automated_metadata
       tags: [eDNA, metagenomics]
-    - name: eDNA processing
+    - name: Exploratory eDNA Dashboard
       description: Tools for turning marine eDNA taxonomic results into interactive, map-based HTML reports and a queryable Postgres database. 
       url: https://github.com/jhuapl-bio/eDNA_processing
       tags: [eDNA, metagenomics]
-    - name: Mytax2
-      description: Real-time dashboard for metagenomic taxonomic analysis.
+    - name: Field-Forward Sequencing
+      description: MyTax2: Real-time dashboard for metagenomic taxonomic analysis.
       url: https://github.com/jhuapl-bio/mytax
       tags: [eDNA, metagenomics, dashboard, Illumina, ONT]
 - name: Infectious Disease Surveillance
