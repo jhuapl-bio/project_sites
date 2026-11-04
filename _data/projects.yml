@@ -11,7 +11,7 @@
       url: https://github.com/jhuapl-bio/eDNA_processing
       tags: [eDNA, metagenomics]
     - name: Field-Forward Sequencing
-      description: MyTax2: Real-time dashboard for metagenomic taxonomic analysis.
+      description: "MyTax2: Real-time dashboard for metagenomic taxonomic analysis."
       url: https://github.com/jhuapl-bio/mytax
       tags: [eDNA, metagenomics, dashboard, Illumina, ONT]
 - name: Infectious Disease Surveillance
