@@ -1,6 +1,8 @@
 # project_sites
 
-Simple Jekyll/GitHub Pages landing page for the `jhuapl-bio` GitHub organization.
+This repository serves a simple Jekyll/GitHub Pages landing page for the `jhuapl-bio` GitHub organization. It categorizes bio-adjacent software developed at JHU/APL into broad categories and briefly describes how each repository is used. 
+
+
 
 Published at **https://jhuapl-bio.github.io/project_sites/** from https://github.com/jhuapl-bio/project_sites.
 
@@ -30,6 +32,8 @@ For this simple site, pushing directly to GitHub Pages is generally sufficient.
 ## Branding
 
 The stylesheet uses Johns Hopkins Heritage Blue and restrained Hopkins accent colors. Use only official, approved Johns Hopkins/JHU/APL logo artwork and follow the current Johns Hopkins brand guidelines.
+
+For easy access to the landing page or use in presentations, use the following QR code: ![./assets/img.](https://github.com/jhuapl-bio/project_sites/blob/main/assets/img/jhuapl-bio_project-sites_qr.png)
 
 
 ## Local demo
