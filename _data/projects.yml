@@ -10,7 +10,7 @@
       description: Tools for turning marine eDNA taxonomic results into interactive, map-based HTML reports and a queryable Postgres database. 
       url: https://github.com/jhuapl-bio/eDNA_processing
       tags: [eDNA, metagenomics]
-    - name: Field-Forward Sequencing
+    - name: Field-Forward Environmental Sequencing
       description: "MyTax2: Real-time dashboard for metagenomic taxonomic analysis."
       url: https://github.com/jhuapl-bio/mytax
       tags: [eDNA, metagenomics, dashboard, Illumina, ONT]
@@ -21,15 +21,28 @@
     - name: TaxTriage
       description: Software supporting Oxford Nanopore sequencing analysis workflows.
       url: https://github.com/jhuapl-bio/taxtriage
-      tags: [Nextflow, Agnostics Detection, Reporting, Illumina, ONT]
+      tags: [Nextflow, Agnostic Detection, Reporting, Illumina, ONT]
     - name: Basestack
       description: Platform for rapid and real-time analysis of next-generation sequencing data.
       url: https://github.com/jhuapl-bio/Basestack
       tags: [NGS, surveillance]
+    - name: Field-Forward Pathogen Sequencing
+      description: "MyTax2: Real-time dashboard for metagenomic taxonomic analysis."
+      url: https://github.com/jhuapl-bio/mytax
+      tags: [eDNA, metagenomics, dashboard, Illumina, ONT]
     - name: ONT-DART
       description: Software supporting Oxford Nanopore sequencing analysis workflows.
       url: https://github.com/jhuapl-bio/ONT-DART
       tags: [Nanopore, sequencing]
+    - name: SAGES
+      description: Suite for Automated Global Electronic bioSurveillance.
+      url: https://github.com/sages-health/sages
+      tags: [epidemiology, syndromic surveillance]
+    - name: ChainChecker
+      description: Pathogen transmission chain monitoring during outbreak response. 
+      url: https://github.com/jhuapl-globalhealth/chainchecker
+      tags: [outbreak response, genomic epidemiology]
+      
 # - name: Metabolomics
 #   description: Software for mass spectrometry, metabolite detection, spectral analysis, and related computational workflows.
 #   icon: "◇"
