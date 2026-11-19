@@ -41,6 +41,7 @@
     - name: ChainChecker
       description: Chain of transmission analysis during outbreak response. 
       url: https://github.com/jhuapl-globalhealth/chainchecker
+      tags: [contact tracing, outbreak response, genomic epidemiology]
 # - name: Metabolomics
 #   description: Software for mass spectrometry, metabolite detection, spectral analysis, and related computational workflows.
 #   icon: "◇"
